@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="C:/Users/moazzam/Desktop/testNGbatch12new/TestNGBasicsBatch12">
-   <groups>
-       <run>
-           <include name="regression"/>
-       </run>
-   </groups>
-        <packages>
-            <package name="class01"></package>
-        </packages>
+    <test verbose="2" preserve-order="true" name="parallelTest" parallel="methods" >
+        <classes>
+            <class name="class03.loginTest">
+            </class>
+        </classes>
     </test>
 </suite>
-
